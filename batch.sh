@@ -19,13 +19,12 @@ if [ ! -d $indir ]; then
  echo "Error: Unable to find $indir"
  exit 1
 fi
-if [ ! -d $outdir ]; then
- echo "Error: Unable to find $outdir"
- exit 1
-fi
 if [ ! -d $refdir ]; then
  echo "Error: Unable to find $refdir"
  exit 1
+fi
+if [ ! -d $outdir ]; then
+ mkdir $outdir
 fi
 if [ ! -z "$(ls $outdir)" ]; then
  echo "Error: Please delete files in $outdir"
