@@ -1,0 +1,4 @@
+This dataset was designed to validate slice order of mosaic images acquired with different slice orientation on a  Siemens B17. The participant violently rotates the head during one of the volumes, revealing the slice order. For details see
+	http://www.mccauslandcenter.sc.edu/crnl/tools/stc
+In addition, the images jpg1.dcm and jpg2.dcm were converted to the lossless-JPEG format unique to DICOM using dcmcjpeg version 3.6.
+
