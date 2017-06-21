@@ -28,4 +28,6 @@ This software and images are open source and were acquired by Chris Rorden. The 
 
 ## Running
 
-Edit the first few lines of the `batch.sh` script so that `basedir` reports the location of the `dcm_qa` folder on your computer and `exenam` reports the location of dcm2niix. Next, make sure the script is executable (`chmod +x batch.sh`). Then run the script.
+Assuming that the executable dcm2niix is in your path, you should be able to simply run the script `batch.sh` from the terminal.
+
+If you have problems you can edit the first few lines of the `batch.sh` script so that `basedir` reports the explicit location of the `dcm_qa` folder (by default this is assumed to be the folder containing the script) on your computer and `exenam` reports the explicit location of dcm2niix (by default it is assumed to be in your path). Also, make sure the script is executable (`chmod +x batch.sh`). Then run the script.
