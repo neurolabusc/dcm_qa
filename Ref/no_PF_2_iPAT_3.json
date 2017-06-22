@@ -28,5 +28,5 @@
 	"TrueEchoSpacing": 0.000489996,
 	"PhaseEncodingDirection": "j-",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20170621 Clang7.3.0"
+	"ConversionSoftwareVersion": "v1.0.20170621 (OpenJPEG build) Clang7.3.0"
 }
