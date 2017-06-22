@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Test if command exists.
+exists() {
+    test -x "$(command -v "$1")"
+}
+
 #exenam is executable
 # we assume it is in the users path
 # however, this could be set explicitly, e.g.
@@ -19,32 +24,51 @@ indir=${basedir}/In
 outdir=${basedir}/Out
 refdir=${basedir}/Ref
 
-#check inputs
-command -v $exenam >/dev/null 2>&1 || { echo >&2 "I require $exenam but it's not installed.  Aborting."; exit 1; }
+# Check inputs.
+exists $exenam ||
+    {
+        echo >&2 "I require $exenam but it's not installed.  Aborting."
+        exit 1
+    }
+
 if [ ! -d $indir ]; then
  echo "Error: Unable to find $indir"
  exit 1
 fi
+
 if [ ! -d $refdir ]; then
  echo "Error: Unable to find $refdir"
  exit 1
 fi
+
 if [ ! -d $outdir ]; then
  mkdir $outdir
 fi
+
 if [ ! -z "$(ls $outdir)" ]; then
  echo "Error: Please delete files in $outdir"
  exit 1
 fi
 
-#convert images
+# Convert images.
 cmd="$exenam -b y -z n -f %p_%s -o $outdir $indir"
 echo "Running command:"
 echo $cmd
 $cmd
 
+# Validate JSON.
+exists python &&
+    {
+        printf "\n\n\nValidating JSON files.\n\n\n"
+        for file in $outdir/*.json; do
+            echo -n "$file "
+            ! python -m json.tool "$file" > /dev/null || echo " --  Valid."
+        done
+        printf "\n\n\n"
+    }
+
 #check differences
-cmd="diff -bur $outdir $refdir"
+cmd="diff -br $outdir $refdir -I ConversionSoftwareVersion"
 echo "Running command:"
 echo $cmd
 $cmd
