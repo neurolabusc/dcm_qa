@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Fail if anything not planed to go wrong, goes wrong
+set -eu
+
 # Test if command exists.
 exists() {
     test -x "$(command -v "$1")"
@@ -8,14 +11,16 @@ exists() {
 #exenam is executable
 # we assume it is in the users path
 # however, this could be set explicitly, e.g.
-#  exenam="/Users/rorden/Documents/cocoa/dcm2niix/console/dcm2niix"
-exenam="dcm2niix"
+#  exenam="/Users/rorden/Documents/cocoa/dcm2niix/console/dcm2niix" batch.sh
+exenam=${examnam:-dcm2niix}
 
 #basedir is folder with "Ref" and "In" subfolders.
 # we assume it is the same same folder as the script
 # however, this could be set explicitly, e.g.
-#   basedir="/Users/rorden/dcm_qa"
-basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#   basedir="/Users/rorden/dcm_qa" batch.sh
+if [ -z ${basedir:-} ]; then
+    basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
 #### no need to edit subsequent lines
 
@@ -31,17 +36,17 @@ exists $exenam ||
         exit 1
     }
 
-if [ ! -d $indir ]; then
+if [ ! -d "$indir" ]; then
  echo "Error: Unable to find $indir"
  exit 1
 fi
 
-if [ ! -d $refdir ]; then
+if [ ! -d "$refdir" ]; then
  echo "Error: Unable to find $refdir"
  exit 1
 fi
 
-if [ ! -d $outdir ]; then
+if [ ! -d "$outdir" ]; then
  mkdir $outdir
 fi
 
