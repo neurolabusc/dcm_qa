@@ -1,4 +1,5 @@
 {
+	"Modality": "MR",
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "TrioTim",
 	"AcquisitionNumber": 1,
@@ -62,5 +63,5 @@
 		0	],
 	"PhaseEncodingDirection": "j-",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20170623 (OpenJPEG build) Clang7.3.0"
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
 }

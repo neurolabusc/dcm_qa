@@ -1,4 +1,5 @@
 {
+	"Modality": "MR",
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "Prisma_fit",
 	"EchoTrainLength": 48,
@@ -26,5 +27,5 @@
 	"TotalReadoutTime": 0.0230298,
 	"PhaseEncodingDirection": "j-",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20170623 (OpenJPEG build) Clang7.3.0"
+	"ConversionSoftwareVersion": "v1.0.20170818 (OpenJPEG build) Clang7.3.0"
 }
