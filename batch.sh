@@ -72,8 +72,21 @@ exists python &&
         printf "\n\n\n"
     }
 
+#remove macOS hidden files
+dsstore=${refdir}/.DS_Store
+exists $dsstore
+    {
+    	rm $dsstore
+    }
+dsstore=${outdir}/.DS_Store
+exists $dsstore
+    {
+    	rm $dsstore
+    }
+
 #check differences
-cmd="diff -br $outdir $refdir -I ConversionSoftwareVersion"
+
+cmd="diff -x '.*' -br $refdir $outdir -I ConversionSoftwareVersion"
 echo "Running command:"
 echo $cmd
 $cmd

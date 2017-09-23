@@ -1,13 +1,6 @@
 This dataset was designed to validate reading TotalReadoutTime for Siemens D13D. For details see
 	https://github.com/rordenlab/dcm2niix/issues/98
-Below we show total readout time as estimated using the echo spacing (from the PDF) and using the Bandwidth (from the DICOM).
+	https://github.com/rordenlab/dcm2niix/issues/130
+The Excel spreadsheet provides scan details and derived values.
 
-Siemens Product sequences
- no_PF_no_iPAT_1 : echo spacing 0.49ms, 64 lines = 0.03087s; "TotalReadoutTime": 0.0308698
- 6_8_PF_no_iPAT_2 : echo spacing 0.49ms, 48 lines = 0.02303: "TotalReadoutTime": 0.0230298
- no_PF_2_iPAT_3: echo spacing 0.49ms, 32 lines = 0.01519: "TotalReadoutTime": 0.0151899
-
-CMRR sequences
- no_PF_no_iPAT_4 : echo spacing 0.53ms, 64 lines = 0.03339s; "TotalReadoutTime": 0.0333901
- 68_PF_no_iPAT_5 : echo spacing 0.53ms, 48 lines = 0.02491s; "TotalReadoutTime": 0.0249101
- no_PF_2_iPAT_6 : echo spacing 0.55ms, 32 lines = 0.01705s; "TotalReadoutTime": 0.0170501
+These images are open source and were acquired by Michael Harms. Distributed under the [2-clause BSD license](https://opensource.org/licenses/BSD-2-Clause) and released in September 2017.
