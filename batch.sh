@@ -51,8 +51,8 @@ if [ ! -d "$outdir" ]; then
 fi
 
 if [ ! -z "$(ls $outdir)" ]; then
- echo "Error: Please delete files in $outdir"
- exit 1
+ echo "Cleaning output directory: $outdir"
+ rm $outdir/*
 fi
 
 # Convert images.
