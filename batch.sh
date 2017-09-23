@@ -72,17 +72,11 @@ exists python &&
         printf "\n\n\n"
     }
 
-#remove macOS hidden files
+#remove macOS hidden files if they exist
 dsstore=${refdir}/.DS_Store
-exists $dsstore
-    {
-    	rm $dsstore
-    }
+[ -e $dsstore ] && rm $dsstore
 dsstore=${outdir}/.DS_Store
-exists $dsstore
-    {
-    	rm $dsstore
-    }
+[ -e $dsstore ] && rm $dsstore
 
 #check differences
 
