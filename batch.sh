@@ -3,6 +3,8 @@
 # Fail if anything not planed to go wrong, goes wrong
 set -eu
 
+PS4="Running: "
+
 # Test if command exists.
 exists() {
     test -x "$(command -v "$1")"
@@ -56,10 +58,9 @@ if [ ! -z "$(ls $outdir)" ]; then
 fi
 
 # Convert images.
-cmd="$exenam -b y -z n -f %p_%s -o $outdir $indir"
-echo "Running command:"
-echo $cmd
-$cmd
+set -x
+$exenam -b y -z n -f "%p_%s" -o "$outdir" "$indir"
+set +x
 
 # Validate JSON.
 exists python &&
@@ -74,14 +75,12 @@ exists python &&
 
 #remove macOS hidden files if they exist
 dsstore=${refdir}/.DS_Store
-[ -e $dsstore ] && rm $dsstore
+[ -e $dsstore ] && rm "$dsstore"
 dsstore=${outdir}/.DS_Store
-[ -e $dsstore ] && rm $dsstore
+[ -e "$dsstore" ] && rm "$dsstore"
 
 #check differences
 
-cmd="diff -x '.*' -br $refdir $outdir -I ConversionSoftwareVersion"
-echo "Running command:"
-echo $cmd
-$cmd
-
+set -x
+diff -x '.*' -br "$refdir" "$outdir" -I ConversionSoftwareVersion
+set +x
