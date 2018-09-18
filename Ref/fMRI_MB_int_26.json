@@ -103,5 +103,5 @@
 		-0.178802	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20180622 (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
+	"ConversionSoftwareVersion": "v1.0.20180918  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
 }

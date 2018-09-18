@@ -101,5 +101,5 @@
 		-0.988228	],
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20180622 Clang9.1.0"
+	"ConversionSoftwareVersion": "v1.0.20180918  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
 }
