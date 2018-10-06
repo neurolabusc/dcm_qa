@@ -1,6 +1,7 @@
 {
 	"Modality": "MR",
 	"MagneticFieldStrength": 3,
+	"ImagingFrequency": 123.262,
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "Prisma",
 	"InstitutionName": "Washington_University",
@@ -130,5 +131,5 @@
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20180918  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
+	"ConversionSoftwareVersion": "v1.0.20181007  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
 }

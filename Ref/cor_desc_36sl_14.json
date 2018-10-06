@@ -1,6 +1,7 @@
 {
 	"Modality": "MR",
 	"MagneticFieldStrength": 3,
+	"ImagingFrequency": 123.248,
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "TrioTim",
 	"InstitutionName": "USC",
@@ -43,6 +44,7 @@
 	"TxRefAmp": 399.953,
 	"PhaseResolution": 1,
 	"ReceiveCoilName": "HeadMatrix",
+	"CoilString": "T:HEA;HEP",
 	"PulseSequenceDetails": "%SiemensSeq%_ep2d_bold",
 	"PercentPhaseFOV": 100,
 	"PhaseEncodingSteps": 64,
@@ -102,5 +104,5 @@
 		-0.988228	],
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20180918  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
+	"ConversionSoftwareVersion": "v1.0.20181007  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
 }
