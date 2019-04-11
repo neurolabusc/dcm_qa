@@ -46,6 +46,7 @@
 	"ReceiveCoilName": "HeadMatrix",
 	"CoilString": "T:HEA;HEP",
 	"PulseSequenceDetails": "%SiemensSeq%_ep2d_bold",
+	"RefLinesPE": 32,
 	"PercentPhaseFOV": 100,
 	"PhaseEncodingSteps": 64,
 	"AcquisitionMatrixPE": 64,
@@ -104,5 +105,5 @@
 		-0.107999	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20181007  (JP2:OpenJPEG) (JP-LS:CharLS) Clang9.1.0"
+	"ConversionSoftwareVersion": "v1.0.20190308  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.0"
 }
