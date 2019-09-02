@@ -55,11 +55,26 @@ if [ ! -z "$(ls $outdir)" ]; then
  rm $outdir/*
 fi
 
+# detect big endian https://github.com/rordenlab/dcm2niix/issues/333
+littleEndian=$(echo I | tr -d [:space:] | od -to2 | head -n1 | awk '{print $2}' | cut -c6)
+if [[ $littleEndian == "1" ]]; then
+  #echo "little-endian hardware: retaining little-endian"
+  #return blank so we are compatible with earlier versions of dcm2niix
+  endian=""
+else
+  echo "big-endian hardware: forcing little-endian NIfTIs"
+  endian="--big-endian n"
+fi
+
 # Convert images.
-cmd="$exenam -b y -z n -f %p_%s -o $outdir $indir"
+cmd="$exenam $endian -b y -z n -f %p_%s -o $outdir $indir"
+
 echo "Running command:"
 echo $cmd
+exit 1
+
 $cmd
+
 
 # Validate JSON.
 exists python &&
