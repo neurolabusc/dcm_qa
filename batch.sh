@@ -71,7 +71,6 @@ cmd="$exenam $endian -b y -z n -f %p_%s -o $outdir $indir"
 
 echo "Running command:"
 echo $cmd
-exit 1
 
 $cmd
 
