@@ -49,6 +49,7 @@
 	"PulseSequenceDetails": "%CustomerSeq%_cmrr_mbep2d_bold",
 	"MultibandAccelerationFactor": 2,
 	"PercentPhaseFOV": 100,
+	"PercentSampling": 100,
 	"PhaseEncodingSteps": 86,
 	"AcquisitionMatrixPE": 86,
 	"ReconMatrixPE": 86,
@@ -105,5 +106,5 @@
 		-0.178802	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190308  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.0"
+	"ConversionSoftwareVersion": "v1.0.20200331"
 }

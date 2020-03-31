@@ -51,6 +51,7 @@
 	"WipMemBlock": "966783a2-a37e-4912-90a7-1b34238aa6b3||Sequence: ve11c/master r/ab69a6c; Apr 19 2017 10:08:21 by eja",
 	"ConsistencyInfo": "N4_VE11C_LATEST_20160120",
 	"PercentPhaseFOV": 100,
+	"PercentSampling": 100,
 	"EchoTrainLength": 135,
 	"PhaseEncodingSteps": 135,
 	"AcquisitionMatrixPE": 90,
@@ -132,5 +133,5 @@
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190308  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.0"
+	"ConversionSoftwareVersion": "v1.0.20200331"
 }

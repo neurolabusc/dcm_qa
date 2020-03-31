@@ -51,6 +51,7 @@
 	"RefLinesPE": 48,
 	"ConsistencyInfo": "N4_VE11C_LATEST_20160120",
 	"PercentPhaseFOV": 100,
+	"PercentSampling": 100,
 	"EchoTrainLength": 23,
 	"PhaseEncodingSteps": 90,
 	"AcquisitionMatrixPE": 90,
@@ -133,5 +134,5 @@
 		0	],
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190308  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.0"
+	"ConversionSoftwareVersion": "v1.0.20200331"
 }

@@ -48,6 +48,7 @@
 	"PulseSequenceDetails": "%SiemensSeq%_ep2d_bold",
 	"RefLinesPE": 32,
 	"PercentPhaseFOV": 100,
+	"PercentSampling": 100,
 	"PhaseEncodingSteps": 64,
 	"AcquisitionMatrixPE": 64,
 	"ReconMatrixPE": 64,
@@ -105,5 +106,5 @@
 		-0.988228	],
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20190308  (JP2:OpenJPEG) (JP-LS:CharLS) Clang10.0.0"
+	"ConversionSoftwareVersion": "v1.0.20200331"
 }
