@@ -47,6 +47,8 @@
 	"CoilString": "T:HEA;HEP",
 	"PulseSequenceDetails": "%SiemensSeq%\\ep2d_bold",
 	"RefLinesPE": 32,
+	"CoilCombinationMethod": "Sum of Squares",
+	"MatrixCoilMode": "GRAPPA",
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 100,
 	"PhaseEncodingSteps": 64,
@@ -103,7 +105,8 @@
 		0,
 		-0.152986,
 		-0.988228	],
+	"ImageOrientationText": "Cor>Tra(8.8)",
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

@@ -47,6 +47,8 @@
 	"ReceiveCoilName": "HeadMatrix",
 	"CoilString": "t:HEA;HEP",
 	"PulseSequenceDetails": "%CustomerSeq%\\cmrr_mbep2d_bold",
+	"CoilCombinationMethod": "Sum of Squares",
+	"MatrixCoilMode": "SENSE",
 	"MultibandAccelerationFactor": 2,
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 100,
@@ -104,7 +106,8 @@
 		-2e-16,
 		0.983885,
 		-0.178802	],
+	"ImageOrientationText": "Tra>Cor(-10.3)",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }

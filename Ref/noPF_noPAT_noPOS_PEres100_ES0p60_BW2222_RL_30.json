@@ -48,7 +48,9 @@
 	"ReceiveCoilActiveElements": "HEA;HEP",
 	"PulseSequenceDetails": "%CustomerSeq%\\cmrr_mbep2d_se",
 	"WipMemBlock": "87d5b6d7-c26d-44a1-810e-2e9ad27dcecd||Sequence: ve11c/master r/ab69a6c; Apr 19 2017 10:08:21 by eja",
+	"CoilCombinationMethod": "Sum of Squares",
 	"ConsistencyInfo": "N4_VE11C_LATEST_20160120",
+	"MatrixCoilMode": "SENSE",
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 100,
 	"EchoTrainLength": 90,
@@ -130,7 +132,8 @@
 		0,
 		1,
 		0	],
+	"ImageOrientationText": "Tra",
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20201030"
+	"ConversionSoftwareVersion": "v1.0.20211006"
 }
