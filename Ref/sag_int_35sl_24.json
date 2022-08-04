@@ -20,6 +20,7 @@
 	"ScanOptions": "FS",
 	"SequenceName": "*epfid2d1_64",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC"],
+	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 24,
 	"AcquisitionTime": "14:01:5.875000",
 	"AcquisitionNumber": 1,
@@ -108,5 +109,5 @@
 	"ImageOrientationText": "Sag",
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20211006"
+	"ConversionSoftwareVersion": "v1.0.20220720"
 }

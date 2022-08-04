@@ -21,6 +21,7 @@
 	"ScanOptions": "FS",
 	"SequenceName": "epse2d1_180",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC"],
+	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 35,
 	"AcquisitionTime": "16:09:19.177500",
 	"AcquisitionNumber": 1,
@@ -135,5 +136,5 @@
 	"ImageOrientationText": "Tra",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20211006"
+	"ConversionSoftwareVersion": "v1.0.20220720"
 }

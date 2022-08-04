@@ -21,6 +21,7 @@
 	"ScanOptions": "PFP\\FS",
 	"SequenceName": "epse2d1_90",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC"],
+	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 19,
 	"AcquisitionTime": "15:37:38.497500",
 	"AcquisitionNumber": 1,
@@ -135,5 +136,5 @@
 	"ImageOrientationText": "Tra",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20211006"
+	"ConversionSoftwareVersion": "v1.0.20220720"
 }
