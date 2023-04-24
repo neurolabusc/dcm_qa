@@ -1,7 +1,7 @@
 {
 	"Modality": "MR",
 	"MagneticFieldStrength": 3,
-	"ImagingFrequency": 123.262,
+	"ImagingFrequency": 123.261657,
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "Prisma",
 	"InstitutionName": "Washington University",
@@ -137,5 +137,5 @@
 	"ImageOrientationText": "Tra",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20220720"
+	"ConversionSoftwareVersion": "v1.0.20230411"
 }

@@ -1,7 +1,7 @@
 {
 	"Modality": "MR",
 	"MagneticFieldStrength": 3,
-	"ImagingFrequency": 123.248,
+	"ImagingFrequency": 123.247651,
 	"Manufacturer": "Siemens",
 	"ManufacturersModelName": "TrioTim",
 	"InstitutionName": "USC",
@@ -110,5 +110,5 @@
 	"ImageOrientationText": "Cor>Tra(8.8)",
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20220720"
+	"ConversionSoftwareVersion": "v1.0.20230411"
 }
