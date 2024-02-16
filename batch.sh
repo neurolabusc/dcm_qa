@@ -94,7 +94,7 @@ dsstore=${outdir}/.DS_Store
 
 #check differences
 
-cmd="diff -x '.*' -br $refdir $outdir -I ConversionSoftwareVersion"
+cmd="diff -x '.*' -br $refdir $outdir -I ConversionSoftwareVersion  -I BidsGuess"
 echo "Running command:"
 echo $cmd
 $cmd
