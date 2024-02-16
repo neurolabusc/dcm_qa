@@ -3,6 +3,8 @@
 # Fail if anything not planed to go wrong, goes wrong
 set -eu
 
+PS4="Running: "
+
 # Test if command exists.
 exists() {
     test -x "$(command -v "$1")"
@@ -55,25 +57,10 @@ if [ ! -z "$(ls $outdir)" ]; then
  rm $outdir/*
 fi
 
-# detect big endian https://github.com/rordenlab/dcm2niix/issues/333
-littleEndian=$(echo I | tr -d [:space:] | od -to2 | head -n1 | awk '{print $2}' | cut -c6)
-if [[ $littleEndian == "1" ]]; then
-  #echo "little-endian hardware: retaining little-endian"
-  #return blank so we are compatible with earlier versions of dcm2niix
-  endian=""
-else
-  echo "big-endian hardware: forcing little-endian NIfTIs"
-  endian="--big-endian n"
-fi
-
 # Convert images.
-cmd="$exenam $endian -b y -z n -f %p_%s -o $outdir $indir"
-
-echo "Running command:"
-echo $cmd
-
-$cmd
-
+set -x
+$exenam -b y -z n -f "%p_%s" -o "$outdir" "$indir"
+set +x
 
 # Validate JSON.
 exists python &&
@@ -88,14 +75,13 @@ exists python &&
 
 #remove macOS hidden files if they exist
 dsstore=${refdir}/.DS_Store
-[ -e $dsstore ] && rm $dsstore
+[ -e $dsstore ] && rm "$dsstore"
 dsstore=${outdir}/.DS_Store
-[ -e $dsstore ] && rm $dsstore
+[ -e "$dsstore" ] && rm "$dsstore"
 
 #check differences
 
-cmd="diff -x '.*' -br $refdir $outdir -I ConversionSoftwareVersion  -I BidsGuess"
-echo "Running command:"
-echo $cmd
-$cmd
+set -x
+diff -x '.*' -br "$refdir" "$outdir" -I ConversionSoftwareVersion -I BidsGuess
+set +x
 
