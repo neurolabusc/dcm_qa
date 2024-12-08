@@ -13,13 +13,14 @@
 	"ProcedureStepDescription": "Research^MCBI_TESTING",
 	"SoftwareVersions": "syngo MR B17",
 	"MRAcquisitionType": "2D",
+	"StudyDescription": "Research^MCBI_TESTING",
 	"SeriesDescription": "fMRI_MB_asc",
 	"ProtocolName": "fMRI_MB_asc",
 	"ScanningSequence": "EP",
 	"SequenceVariant": "SK",
 	"ScanOptions": "FS",
 	"SequenceName": "epfid2d1_86",
-	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC"],
+	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC", "MAGNITUDE"],
 	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 25,
 	"AcquisitionTime": "14:01:49.417500",
@@ -28,6 +29,10 @@
 	"SliceThickness": 3,
 	"SpacingBetweenSlices": 3.6,
 	"SAR": 0.069649,
+	"TablePosition": [
+		0,
+		0,
+		-0	],
 	"EchoTime": 0.034,
 	"RepetitionTime": 3,
 	"FlipAngle": 71,
@@ -49,6 +54,7 @@
 	"CoilString": "t:HEA;HEP",
 	"PulseSequenceDetails": "%CustomerSeq%\\cmrr_mbep2d_bold",
 	"CoilCombinationMethod": "Sum of Squares",
+	"ConsistencyInfo": "N4_VB17A_LATEST_20090307",
 	"MatrixCoilMode": "SENSE",
 	"MultibandAccelerationFactor": 2,
 	"PercentPhaseFOV": 100,
@@ -109,6 +115,7 @@
 		-0.178802	],
 	"ImageOrientationText": "Tra>Cor(-10.3)",
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
+	"BidsGuess": ["func","_acq-epfid2_dir-AP_run-25_bold"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20230411"
+	"ConversionSoftwareVersion": "v1.0.20241127"
 }

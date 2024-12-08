@@ -13,13 +13,14 @@
 	"ProcedureStepDescription": "Research^MCBI_TESTING",
 	"SoftwareVersions": "syngo MR B17",
 	"MRAcquisitionType": "2D",
+	"StudyDescription": "Research^MCBI_TESTING",
 	"SeriesDescription": "sag_int_36sl",
 	"ProtocolName": "sag_int_36sl",
 	"ScanningSequence": "EP",
 	"SequenceVariant": "SK",
 	"ScanOptions": "FS",
 	"SequenceName": "*epfid2d1_64",
-	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC"],
+	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC", "MAGNITUDE"],
 	"NonlinearGradientCorrection": false,
 	"SeriesNumber": 21,
 	"AcquisitionTime": "13:59:31.837500",
@@ -27,6 +28,10 @@
 	"SliceThickness": 3,
 	"SpacingBetweenSlices": 3.6,
 	"SAR": 0.0981393,
+	"TablePosition": [
+		0,
+		0,
+		-0	],
 	"EchoTime": 0.03,
 	"RepetitionTime": 3,
 	"FlipAngle": 76,
@@ -49,6 +54,7 @@
 	"PulseSequenceDetails": "%SiemensSeq%\\ep2d_bold",
 	"RefLinesPE": 32,
 	"CoilCombinationMethod": "Sum of Squares",
+	"ConsistencyInfo": "N4_VB17A_LATEST_20090307",
 	"MatrixCoilMode": "GRAPPA",
 	"PercentPhaseFOV": 100,
 	"PercentSampling": 100,
@@ -109,6 +115,7 @@
 		-1	],
 	"ImageOrientationText": "Sag",
 	"InPlanePhaseEncodingDirectionDICOM": "ROW",
+	"BidsGuess": ["func","_acq-epfid2p2_dir-RL_run-21_bold"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20230411"
+	"ConversionSoftwareVersion": "v1.0.20241127"
 }
