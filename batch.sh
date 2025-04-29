@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Fail if anything not planed to go wrong, goes wrong
+# Fail if anything not planned to go wrong, goes wrong
 set -eu
 
 PS4="Running: "
@@ -71,12 +71,12 @@ if [ ! -d "$refdir" ]; then
 fi
 
 if [ ! -d "$outdir" ]; then
- mkdir $outdir
+ mkdir $"outdir"
 fi
 
 if [ ! -z "$(ls $outdir)" ]; then
  echo "Cleaning output directory: $outdir"
- rm $outdir/*
+ rm $"outdir"/*
 fi
 
 # Convert images.
