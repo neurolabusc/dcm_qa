@@ -71,12 +71,12 @@ if [ ! -d "$refdir" ]; then
 fi
 
 if [ ! -d "$outdir" ]; then
- mkdir $"outdir"
+ mkdir ${outdir}
 fi
 
 if [ ! -z "$(ls $outdir)" ]; then
  echo "Cleaning output directory: $outdir"
- rm $"outdir"/*
+ rm ${outdir}/*
 fi
 
 # Convert images.
