@@ -19,6 +19,7 @@
 	"ProtocolName": "noPF_noPAT_noPOS_PEres75_ES0p59_BW2222_PA",
 	"ScanningSequence": "EP",
 	"SequenceVariant": "SK\\OSP",
+	"PulseSequenceType": "Gradient Echo EPI",
 	"ScanOptions": "FS",
 	"SequenceName": "epse2d1_68",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC", "MAGNITUDE"],
@@ -36,7 +37,6 @@
 	"EchoTime": 0.06,
 	"RepetitionTime": 6.1,
 	"FlipAngle": 90,
-	"PartialFourier": 1,
 	"BaseResolution": 90,
 	"ShimSetting": [
 		-2173,
@@ -64,6 +64,8 @@
 	"AcquisitionMatrixPE": 68,
 	"ReconMatrixPE": 90,
 	"BandwidthPerPixelPhaseEncode": 18.694,
+	"ParallelReductionFactorInPlane": 1,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"EffectiveEchoSpacing": 0.000594368,
 	"DerivedVendorReportedEchoSpacing": 0.000594368,
 	"TotalReadoutTime": 0.0528987,
@@ -142,5 +144,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-epse2_dir-PA_run-23_epi"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20241127"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

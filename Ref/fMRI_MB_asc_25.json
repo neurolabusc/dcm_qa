@@ -18,6 +18,7 @@
 	"ProtocolName": "fMRI_MB_asc",
 	"ScanningSequence": "EP",
 	"SequenceVariant": "SK",
+	"PulseSequenceType": "Multiband Gradient Echo EPI",
 	"ScanOptions": "FS",
 	"SequenceName": "epfid2d1_86",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC", "MAGNITUDE"],
@@ -36,7 +37,6 @@
 	"EchoTime": 0.034,
 	"RepetitionTime": 3,
 	"FlipAngle": 71,
-	"PartialFourier": 1,
 	"BaseResolution": 86,
 	"ShimSetting": [
 		10737,
@@ -63,6 +63,8 @@
 	"AcquisitionMatrixPE": 86,
 	"ReconMatrixPE": 86,
 	"BandwidthPerPixelPhaseEncode": 20.048,
+	"ParallelReductionFactorInPlane": 1,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"EffectiveEchoSpacing": 0.000580003,
 	"DerivedVendorReportedEchoSpacing": 0.000580003,
 	"TotalReadoutTime": 0.0493003,
@@ -117,5 +119,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["func","_acq-epfid2_dir-AP_run-25_bold"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20241127"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

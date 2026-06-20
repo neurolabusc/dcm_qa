@@ -18,6 +18,7 @@
 	"ProtocolName": "ax_asc_35sl",
 	"ScanningSequence": "EP",
 	"SequenceVariant": "SK",
+	"PulseSequenceType": "Gradient Echo EPI",
 	"ScanOptions": "FS",
 	"SequenceName": "*epfid2d1_64",
 	"ImageType": ["ORIGINAL", "PRIMARY", "M", "ND", "MOSAIC", "MAGNITUDE"],
@@ -35,7 +36,6 @@
 	"EchoTime": 0.03,
 	"RepetitionTime": 3,
 	"FlipAngle": 76,
-	"PartialFourier": 1,
 	"BaseResolution": 64,
 	"ShimSetting": [
 		10737,
@@ -63,6 +63,7 @@
 	"ReconMatrixPE": 64,
 	"BandwidthPerPixelPhaseEncode": 55.804,
 	"ParallelReductionFactorInPlane": 2,
+	"ParallelReductionFactorOutOfPlane": 1,
 	"EffectiveEchoSpacing": 0.000279998,
 	"DerivedVendorReportedEchoSpacing": 0.000559996,
 	"TotalReadoutTime": 0.0176399,
@@ -116,5 +117,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["func","_acq-epfid2p2_dir-AP_run-6_bold"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20241127"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }

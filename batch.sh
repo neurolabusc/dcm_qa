@@ -30,7 +30,7 @@ fi
 indir=${basedir}/In
 outdir=${basedir}/Out
 refdir=${basedir}/Ref
-flags='-b y -z n -f "%p_%s"'
+flags='-b y -z n -f %p_%s'
 
 help_message="usage: batch.sh -i <in dir> -o <out dir> -f <ref dir> -f <dcm2niix flags>\n
 default in dir : ${indir}\n
