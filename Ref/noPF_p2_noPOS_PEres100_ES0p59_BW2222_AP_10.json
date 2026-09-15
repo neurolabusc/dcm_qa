@@ -53,7 +53,7 @@
 	"ReceiveCoilName": "Head_32",
 	"ReceiveCoilActiveElements": "HEA;HEP",
 	"PulseSequenceDetails": "%CustomerSeq%\\cmrr_mbep2d_se",
-	"WipMemBlock": "8d0b7a20-0071-444a-b7a1-f72a4ee42e14||Sequence: ve11c/master r/ab69a6c; Apr 19 2017 10:08:21 by eja",
+	"WipMemBlock": "Sequence: ve11c/master r/ab69a6c; Apr 19 2017 10:08:21 by eja",
 	"RefLinesPE": 24,
 	"CoilCombinationMethod": "Sum of Squares",
 	"ConsistencyInfo": "N4_VE11C_LATEST_20160120",
@@ -145,5 +145,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["fmap","_acq-epse2p2_dir-AP_run-10_epi"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20260620"
+	"ConversionSoftwareVersion": "v1.0.20260819"
 }
