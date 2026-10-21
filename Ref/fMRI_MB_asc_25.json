@@ -26,6 +26,7 @@
 	"SeriesNumber": 25,
 	"AcquisitionTime": "14:01:49.417500",
 	"AcquisitionNumber": 1,
+	"ImageComments": "Unaliased MB2/PE2",
 	"SliceThickness": 3,
 	"SpacingBetweenSlices": 3.6,
 	"SAR": 0.069649,
@@ -118,5 +119,5 @@
 	"InPlanePhaseEncodingDirectionDICOM": "COL",
 	"BidsGuess": ["func","_acq-epfid2_dir-AP_run-25_bold"],
 	"ConversionSoftware": "dcm2niix",
-	"ConversionSoftwareVersion": "v1.0.20261011"
+	"ConversionSoftwareVersion": "v1.0.20260620"
 }
